@@ -29,7 +29,7 @@ jobs:
       uses: Mushus/golangci-linter@v1.1.2
       with:
         # Path of the GolangCI-Lint config file
-        #config: # optional
+        config: # optional
         # Path of the Golang project root directory
         #basePath: # optional, default is .
 

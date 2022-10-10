@@ -21,7 +21,7 @@ func MockConfigGetEnvironment() string {
 func TestPackUtripUrl(t *testing.T) {
 	//t.Parallel()
 
-	expect := "http://ubtrip.eatuo.com:9081/#/singleLogin?&user=apitest@ssharing.com&usertype=3&name=测试&corpcode=TestCorp&sign=d6adb0a937416ff8a59c239852eff4c2&type=home"
+	expect := "http://ubtrip.eatuo.com:9081/#/singleLogin?&user=apitest@ssharing.com&usertype=3&name=测试&corpcode=TestCorp&sign=a6d1aec46f958988cd3e8dfd4142d92a&type=home"
 
 	fakeCorpId := "TestCorp"
 	fakeKey := "6E26F0CA"

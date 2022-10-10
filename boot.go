@@ -39,7 +39,7 @@ func spawnTokenRefresher() error {
 				once.Do(func() {
 					is_ok <- true
 				})
-				//break
+				break
 			} else if try == 0 {
 				is_ok <- false
 				return

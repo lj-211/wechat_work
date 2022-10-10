@@ -27,7 +27,7 @@ func TestPackUtripUrl(t *testing.T) {
 	fakeKey := "6E26F0CA"
 
 	tearDown := func() func() {
-		SetUtripKey(fakeCorpId, fakeKey)
+		_ = SetUtripKey(fakeCorpId, fakeKey)
 
 		return func() {
 			// restore copr id & key

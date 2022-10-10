@@ -17,7 +17,7 @@ func TestPost(t *testing.T) {
 		r *http.Request) {
 		// 在这里mock需要的数据
 		w.WriteHeader(200)
-		_ = io.WriteString(w, string(data_str))
+		_, _ = io.WriteString(w, string(data_str))
 	}))
 	defer server.Close()
 

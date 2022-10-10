@@ -40,14 +40,15 @@ func PackUtripUrl(user_phone string, user_name string) string {
 }
 
 func getUtripBaseUrl(env string) string {
+	base_url := ""
 	switch env {
 	case "production":
-		return "http://www.ssharing.net:9081/#/singleLogin?"
+		base_url = "http://www.ssharing.net:9081/#/singleLogin?"
 	default:
-		return "http://ubtrip.eatuo.com:9081/#/singleLogin?"
+		base_url = "http://ubtrip.eatuo.com:9081/#/singleLogin?"
 	}
 
-	return ""
+	return base_url
 }
 
 func utripSign(user string, corp_code string, key string) string {

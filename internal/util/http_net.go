@@ -3,7 +3,7 @@ package util
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"time"
 )
@@ -19,6 +19,6 @@ func Post(url string, data string, contentType string) (string, error) {
 	}
 	defer resp.Body.Close()
 
-	result, _ := ioutil.ReadAll(resp.Body)
+	result, _ := io.ReadAll(resp.Body)
 	return string(result), nil
 }
